@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="google-signin-client_id"
+              content="666466407349-oanmp950m4pp4arec1fcp8okvj6so4cj.apps.googleusercontent.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+
+    </head>
+
+    <body>
+
+
+        <div class="login-page">
+            <div class="block-center">
+                <div class="content-center">
+                    <div class="content-center__img">
+                        <img src="./logolesroisdelareno.png" alt="">
+                    </div>
+                    <h3 class="content-center__title">Veuillez renseigner votre adresse:</h3>
+                    <div class="form-group content-center__input">
+                        <input type="email" placeholder="Email" class="form-control">
+                    </div>
+                    <div class="content-center__btn">
+                        <div class="btn-login btn-login--connexion">
+                            <span class="btn-login__text">Réinitialiser </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="block-center">
+                <div class="content-center">
+                    <div class="image-top">
+                        <img src="./logolesroisdelareno.png" alt="">
+                    </div>
+                    <div class="content-center__btn-column">
+                        <div class="btn-login btn-login--facebook">
+                            <span class="btn-login__icon">ico</span>
+                            <span class="btn-login__text" onclick="initLogin()">connexion avec facebook</span>
+                        </div>
+                        <div class="btn-login btn-login--google">
+                            <span class="btn-login__icon">ico</span>
+                            <span class="btn-login__text">connexion avec facebook</span>
+                        </div>
+                    </div>
+
+                    <hr class="diviseur">
+
+                    <div class="form-group content-center__input">
+                        <input type="text" class="form-control" placeholder="Nom d'utilisateur">
+                        <input type="password" class="form-control" placeholder="Mot de passe">
+                    </div>
+                    <span class="content-center__forgot-pass">Mot de passe oublié ?</span>
+                    <div class="btn-login btn-login--connexion">
+                        <span class="btn-login__text">Connexion </span>
+                    </div>
+                    <div class="block-inscription">
+                        <p>Vous n'avez pas de compte? <span class="sign-in">créer</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="login-page">
+            <div class="big-block-center">
+                <div class="content-center">
+                    <div class="image-top">
+                        <img src="./logolesroisdelareno.png" alt="">
+                    </div>
+                    <div class="form-group content-center__sign">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" placeholder="Nom d'utilisateur" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" placeholder="Prenom" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" placeholder="Email" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="password" placeholder="Telephone" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="password" placeholder="Mot de passe" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="password" placeholder="Confirmer Mot de passe" class="form-control ">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label class="input-label">Image</label>
+                            <input type="file" placeholder="Telephone" class="form-control ">
+                            <small id="emailHelp" class="form-text text-muted">Votre visage ou une image
+                                virtuelle.</small>
+                        </div>
+                    </div>
+
+                    <div class="content-center__signbtn">
+                        <div class="btn-login btn-login--connexion">
+                            <span class="btn-login__text">S'inscrire </span>
+                        </div>
+                    </div>
+                    <hr class="diviseur">
+                    <div class="two-btn">
+                        <div class="btn-login btn-login--facebook col-12 col-md-6">
+                            <span class="btn-login__icon">ico</span>
+                            <span class="btn-login__text">inscription via facebook</span>
+                        </div>
+                        <div id="google" onclick="startLogin()"
+                             class=" google btn-login btn-login--google col-12 col-md-6">
+                            <span class="btn-login__icon">ico</span>
+                            <span class="btn-login__text">inscription via google</span>
+                        </div>
+                    </div>
+
+                    <div class="block-inscription">
+                        <p>Déja inscrit? <span class="sign-in">connectez-vous</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="my-signin2">
+
+        </div>
+
+        <!--  -->
+
+    </body>
+
+</html>
